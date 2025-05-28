@@ -1,2 +1,2 @@
 # WindowsPS_ChangeLog
-Script to run during system Startup and Shutdown to capture software changes and export them for tracking and reporting.
+Script to run during system Startup and Shutdown to capture software changes and export them for tracking and reporting. Recommended to run the startup and shutdown scripts via GPO. The script creates a startup.csv listing all currently installed software, the shutdown script will try to find the startup.csv in the "SOMEPATH" directory and compare any differences between the startup.csv and the currently installed software, exporting any differences to a changelog.csv. This could be modified to send the list to an email or via an api call.
